@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 8268 5846
 encoding utf-8
-Sheet 3 10
+Sheet 3 12
 Title ""
 Date ""
 Rev ""
@@ -18,8 +18,8 @@ L Transistor_Array:ULN2003 U?
 U 1 1 619A6960
 P 1450 1350
 AR Path="/619A6960" Ref="U?"  Part="1" 
-AR Path="/619A5659/619A6960" Ref="U?"  Part="1" 
-F 0 "U?" H 1450 2017 50  0000 C CNN
+AR Path="/619A5659/619A6960" Ref="U4"  Part="1" 
+F 0 "U4" H 1450 2017 50  0000 C CNN
 F 1 "ULN2003" H 1450 1926 50  0000 C CNN
 F 2 "" H 1500 800 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 1550 1150 50  0001 C CNN
@@ -31,8 +31,8 @@ L power:GND #PWR?
 U 1 1 619A696D
 P 1450 1950
 AR Path="/619A696D" Ref="#PWR?"  Part="1" 
-AR Path="/619A5659/619A696D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1450 1700 50  0001 C CNN
+AR Path="/619A5659/619A696D" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 1450 1700 50  0001 C CNN
 F 1 "GND" H 1455 1777 50  0000 C CNN
 F 2 "" H 1450 1950 50  0001 C CNN
 F 3 "" H 1450 1950 50  0001 C CNN
@@ -56,10 +56,10 @@ DRV6
 Text Label 1850 1750 0    50   ~ 0
 DRV7
 $Comp
-L Connector_Generic:Conn_01x08 J?
+L Connector_Generic:Conn_01x08 J6
 U 1 1 619A716D
 P 2550 1350
-F 0 "J?" H 2630 1342 50  0000 L CNN
+F 0 "J6" H 2630 1342 50  0000 L CNN
 F 1 "Conn_01x08" H 2630 1251 50  0000 L CNN
 F 2 "" H 2550 1350 50  0001 C CNN
 F 3 "~" H 2550 1350 50  0001 C CNN
