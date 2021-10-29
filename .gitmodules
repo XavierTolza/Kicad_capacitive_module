@@ -1,0 +1,3 @@
+[submodule "libs/nfc"]
+	path = libs/nfc
+	url = https://github.com/Tinkerforge/kicad-libraries.git

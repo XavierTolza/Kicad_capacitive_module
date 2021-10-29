@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name rf_antenna)(type KiCad)(uri ${KICAD_USER_TEMPLATE_DIR}/nrf52832/libs/rf_antenna.pretty)(options "")(descr ""))
+  (lib (name nfc)(type KiCad)(uri ${KIPRJMOD}/libs/nfc)(options "")(descr ""))
 )

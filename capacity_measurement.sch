@@ -118,17 +118,17 @@ F10 "USB_DM" I R 7800 5700 50
 F11 "USB_ID" I R 7800 5800 50 
 $EndSheet
 $Sheet
-S 3050 950  550  800 
+S 4300 800  550  800 
 U 619A5659
 F0 "low_end_driver" 50
 F1 "low_end_driver.sch" 50
-F2 "ULN1" I L 3050 1050 50 
-F3 "ULN2" I L 3050 1150 50 
-F4 "ULN3" I L 3050 1250 50 
-F5 "ULN4" I L 3050 1350 50 
-F6 "ULN5" I L 3050 1450 50 
-F7 "ULN6" I L 3050 1550 50 
-F8 "ULN7" I L 3050 1650 50 
+F2 "ULN1" I L 4300 900 50 
+F3 "ULN2" I L 4300 1000 50 
+F4 "ULN3" I L 4300 1100 50 
+F5 "ULN4" I L 4300 1200 50 
+F6 "ULN5" I L 4300 1300 50 
+F7 "ULN6" I L 4300 1400 50 
+F8 "ULN7" I L 4300 1500 50 
 $EndSheet
 $Sheet
 S 5700 2300 900  650 
@@ -512,76 +512,76 @@ Wire Wire Line
 $Comp
 L Motor:Motor_Servo M?
 U 1 1 6195D13A
-P 3400 2500
+P 4950 -1600
 AR Path="/6195D13A" Ref="M?"  Part="1" 
 AR Path="/61AE7304/6195D13A" Ref="M?"  Part="1" 
-F 0 "M?" H 3732 2565 50  0000 L CNN
-F 1 "Motor_Servo" H 3732 2474 50  0000 L CNN
-F 2 "" H 3400 2310 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 3400 2310 50  0001 C CNN
-	1    3400 2500
+F 0 "M?" H 5282 -1535 50  0000 L CNN
+F 1 "Motor_Servo" H 5282 -1626 50  0000 L CNN
+F 2 "" H 4950 -1790 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4950 -1790 50  0001 C CNN
+	1    4950 -1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motor:Motor_Servo M?
 U 1 1 6195D140
-P 3400 2900
+P 4950 -1200
 AR Path="/6195D140" Ref="M?"  Part="1" 
 AR Path="/61AE7304/6195D140" Ref="M?"  Part="1" 
-F 0 "M?" H 3732 2965 50  0000 L CNN
-F 1 "Motor_Servo" H 3732 2874 50  0000 L CNN
-F 2 "" H 3400 2710 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 3400 2710 50  0001 C CNN
-	1    3400 2900
+F 0 "M?" H 5282 -1135 50  0000 L CNN
+F 1 "Motor_Servo" H 5282 -1226 50  0000 L CNN
+F 2 "" H 4950 -1390 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4950 -1390 50  0001 C CNN
+	1    4950 -1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 2900 2950 2900
+	4650 -1200 4500 -1200
 Wire Wire Line
-	2950 2900 2950 2500
+	4500 -1200 4500 -1600
 Wire Wire Line
-	2950 2500 3100 2500
+	4500 -1600 4650 -1600
 Wire Wire Line
-	3100 2600 3000 2600
+	4650 -1500 4550 -1500
 Wire Wire Line
-	3000 2600 3000 3000
+	4550 -1500 4550 -1100
 Wire Wire Line
-	3000 3000 3100 3000
+	4550 -1100 4650 -1100
 $Comp
 L power:GND #PWR?
 U 1 1 6195D14C
-P 3000 3000
+P 4550 -1100
 AR Path="/6195D14C" Ref="#PWR?"  Part="1" 
 AR Path="/61AE7304/6195D14C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3000 2750 50  0001 C CNN
-F 1 "GND" H 3005 2827 50  0000 C CNN
-F 2 "" H 3000 3000 50  0001 C CNN
-F 3 "" H 3000 3000 50  0001 C CNN
-	1    3000 3000
+F 0 "#PWR?" H 4550 -1350 50  0001 C CNN
+F 1 "GND" H 4555 -1273 50  0000 C CNN
+F 2 "" H 4550 -1100 50  0001 C CNN
+F 3 "" H 4550 -1100 50  0001 C CNN
+	1    4550 -1100
 	1    0    0    -1  
 $EndComp
-Connection ~ 3000 3000
+Connection ~ 4550 -1100
 Wire Wire Line
-	3100 2800 2850 2800
+	4650 -1300 4400 -1300
 Wire Wire Line
-	3100 2400 2850 2400
-Text Label 2850 2400 2    50   ~ 0
+	4650 -1700 4400 -1700
+Text Label 4400 -1700 2    50   ~ 0
 SERVO1
-Text Label 2850 2800 2    50   ~ 0
+Text Label 4400 -1300 2    50   ~ 0
 SERVO2
-Text Label 2800 2500 2    50   ~ 0
+Text Label 4350 -1600 2    50   ~ 0
 Vservo
 Wire Notes Line
-	4400 2000 4400 3400
+	5950 -2100 5950 -700
 Wire Notes Line
-	4400 3400 2100 3400
+	5950 -700 3650 -700
 Wire Notes Line
-	2100 3400 2100 2000
+	3650 -700 3650 -2100
 Wire Notes Line
-	2100 2000 4400 2000
-Text Notes 4000 2100 0    59   ~ 0
+	3650 -2100 5950 -2100
+Text Notes 5550 -2000 0    59   ~ 0
 Servo
-Connection ~ 2950 2500
+Connection ~ 4500 -1600
 Text Label 6950 5700 2    50   ~ 0
 MOSI
 Text Label 6950 5800 2    50   ~ 0
@@ -964,18 +964,18 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR?
 U 1 1 61ACF06A
-P 2350 2450
-F 0 "#PWR?" H 2350 2300 50  0001 C CNN
-F 1 "+5V" H 2365 2623 50  0000 C CNN
-F 2 "" H 2350 2450 50  0001 C CNN
-F 3 "" H 2350 2450 50  0001 C CNN
-	1    2350 2450
+P 3900 -1650
+F 0 "#PWR?" H 3900 -1800 50  0001 C CNN
+F 1 "+5V" H 3915 -1477 50  0000 C CNN
+F 2 "" H 3900 -1650 50  0001 C CNN
+F 3 "" H 3900 -1650 50  0001 C CNN
+	1    3900 -1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 2450 2350 2500
+	3900 -1650 3900 -1600
 Wire Wire Line
-	2350 2500 2950 2500
+	3900 -1600 4500 -1600
 Text Label 5850 3350 2    50   ~ 0
 Vmcu
 Text Label 5850 3450 2    50   ~ 0
@@ -1018,18 +1018,95 @@ Text Label 5700 2700 2    50   ~ 0
 MPR_nIRQ
 Text Label 5700 2800 2    50   ~ 0
 MPR_EN
-Text Label 3050 1050 2    50   ~ 0
+Text Label 4300 900  2    50   ~ 0
 ULN1
-Text Label 3050 1150 2    50   ~ 0
+Text Label 4300 1000 2    50   ~ 0
 ULN2
-Text Label 3050 1250 2    50   ~ 0
+Text Label 4300 1100 2    50   ~ 0
 ULN3
-Text Label 3050 1350 2    50   ~ 0
+Text Label 4300 1200 2    50   ~ 0
 ULN4
-Text Label 3050 1450 2    50   ~ 0
+Text Label 4300 1300 2    50   ~ 0
 ULN5
-Text Label 3050 1550 2    50   ~ 0
+Text Label 4300 1400 2    50   ~ 0
 ULN6
-Text Label 3050 1650 2    50   ~ 0
+Text Label 4300 1500 2    50   ~ 0
 ULN7
+$Comp
+L Device:Antenna_Dipole AE?
+U 1 1 61B3DFEE
+P 2550 1800
+F 0 "AE?" V 2554 1780 50  0000 L CNN
+F 1 "NFC" V 2645 1780 50  0000 L CNN
+F 2 "" H 2550 1800 50  0001 C CNN
+F 3 "~" H 2550 1800 50  0001 C CNN
+	1    2550 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61B451CD
+P 2150 1650
+F 0 "C?" H 2265 1696 50  0000 L CNN
+F 1 "TBD" H 2265 1605 50  0000 L CNN
+F 2 "" H 2188 1500 50  0001 C CNN
+F 3 "~" H 2150 1650 50  0001 C CNN
+	1    2150 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1800 2150 1800
+Wire Wire Line
+	2350 1900 2150 1900
+$Comp
+L Device:C C?
+U 1 1 61B4873C
+P 2150 2050
+F 0 "C?" H 2265 2096 50  0000 L CNN
+F 1 "TBD" H 2265 2005 50  0000 L CNN
+F 2 "" H 2188 1900 50  0001 C CNN
+F 3 "~" H 2150 2050 50  0001 C CNN
+	1    2150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B48CC0
+P 2150 1500
+F 0 "#PWR?" H 2150 1250 50  0001 C CNN
+F 1 "GND" H 2155 1327 50  0000 C CNN
+F 2 "" H 2150 1500 50  0001 C CNN
+F 3 "" H 2150 1500 50  0001 C CNN
+	1    2150 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B49053
+P 2150 2200
+F 0 "#PWR?" H 2150 1950 50  0001 C CNN
+F 1 "GND" H 2155 2027 50  0000 C CNN
+F 2 "" H 2150 2200 50  0001 C CNN
+F 3 "" H 2150 2200 50  0001 C CNN
+	1    2150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1800 1350 1800
+Connection ~ 2150 1800
+Wire Wire Line
+	1350 1900 2150 1900
+Connection ~ 2150 1900
+Text Label 1350 3200 0    50   ~ 0
+PRESSURE_CS
+Text Label 1350 3100 0    50   ~ 0
+ACC_nCS
+Text Label 1350 3000 0    50   ~ 0
+SD_EN
+Text Label 1350 3300 0    50   ~ 0
+MPR_EN
+Text Label 1350 3400 0    50   ~ 0
+BOOST_EN
+Text Label 1350 3500 0    50   ~ 0
+SD_CS
 $EndSCHEMATC
