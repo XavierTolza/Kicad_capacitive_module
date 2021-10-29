@@ -361,7 +361,7 @@ AR Path="/619549E5" Ref="R5"  Part="1"
 AR Path="/61AE7304/619549E5" Ref="R?"  Part="1" 
 F 0 "R5" V 8343 3450 50  0000 C CNN
 F 1 "R" V 8434 3450 50  0000 C CNN
-F 2 "" V 8480 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8480 3450 50  0001 C CNN
 F 3 "~" H 8550 3450 50  0001 C CNN
 	1    8550 3450
 	0    1    1    0   
@@ -374,7 +374,7 @@ AR Path="/619549EB" Ref="R6"  Part="1"
 AR Path="/61AE7304/619549EB" Ref="R?"  Part="1" 
 F 0 "R6" V 8343 3650 50  0000 C CNN
 F 1 "R" V 8434 3650 50  0000 C CNN
-F 2 "" V 8480 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8480 3650 50  0001 C CNN
 F 3 "~" H 8550 3650 50  0001 C CNN
 	1    8550 3650
 	0    1    1    0   
@@ -387,7 +387,7 @@ AR Path="/619549F1" Ref="R7"  Part="1"
 AR Path="/61AE7304/619549F1" Ref="R?"  Part="1" 
 F 0 "R7" V 8343 3850 50  0000 C CNN
 F 1 "R" V 8434 3850 50  0000 C CNN
-F 2 "" V 8480 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8480 3850 50  0001 C CNN
 F 3 "~" H 8550 3850 50  0001 C CNN
 	1    8550 3850
 	0    1    1    0   
@@ -472,7 +472,7 @@ AR Path="/619590A1" Ref="J3"  Part="1"
 AR Path="/61AE7304/619590A1" Ref="J?"  Part="1" 
 F 0 "J3" H 8600 2417 50  0000 C CNN
 F 1 "PWR_CONN" H 8600 2326 50  0000 C CNN
-F 2 "" H 8550 2000 50  0001 C CNN
+F 2 "smdpad:smdpad_02x05_1.27_2.54_0.51" H 8550 2000 50  0001 C CNN
 F 3 "~" H 8550 2000 50  0001 C CNN
 	1    8550 2000
 	1    0    0    -1  
@@ -518,7 +518,7 @@ AR Path="/6195D13A" Ref="M1"  Part="1"
 AR Path="/61AE7304/6195D13A" Ref="M?"  Part="1" 
 F 0 "M1" H 6932 4115 50  0000 L CNN
 F 1 "Motor_Servo" H 6932 4024 50  0000 L CNN
-F 2 "" H 6600 3860 50  0001 C CNN
+F 2 "smdpad:smdpad_01x03_1.27_2.54_0.51" H 6600 3860 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6600 3860 50  0001 C CNN
 	1    6600 4050
 	1    0    0    -1  
@@ -531,7 +531,7 @@ AR Path="/6195D140" Ref="M2"  Part="1"
 AR Path="/61AE7304/6195D140" Ref="M?"  Part="1" 
 F 0 "M2" H 6932 4515 50  0000 L CNN
 F 1 "Motor_Servo" H 6932 4424 50  0000 L CNN
-F 2 "" H 6600 4260 50  0001 C CNN
+F 2 "smdpad:smdpad_01x03_1.27_2.54_0.51" H 6600 4260 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6600 4260 50  0001 C CNN
 	1    6600 4450
 	1    0    0    -1  
@@ -660,7 +660,7 @@ AR Path="/61AE7304/6197FD7F" Ref="R?"  Part="1"
 AR Path="/61CC6D58/6197FD7F" Ref="R?"  Part="1" 
 F 0 "R8" H 8470 4796 50  0000 L CNN
 F 1 "R" H 8470 4705 50  0000 L CNN
-F 2 "" V 8330 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8330 4750 50  0001 C CNN
 F 3 "~" H 8400 4750 50  0001 C CNN
 	1    8400 4750
 	1    0    0    -1  
@@ -674,7 +674,7 @@ AR Path="/61AE7304/6197FD85" Ref="TH?"  Part="1"
 AR Path="/61CC6D58/6197FD85" Ref="TH?"  Part="1" 
 F 0 "TH1" H 8498 5196 50  0000 L CNN
 F 1 "Thermistor_NTC" V 8250 4750 50  0000 L CNN
-F 2 "" H 8400 5200 50  0001 C CNN
+F 2 "smdpad:smdpad_01x02_1.27_2.54_0.51" H 8400 5200 50  0001 C CNN
 F 3 "~" H 8400 5200 50  0001 C CNN
 	1    8400 5150
 	1    0    0    -1  
@@ -759,7 +759,7 @@ U 1 1 619D3EEF
 P 3350 7100
 F 0 "SC1" H 3000 7200 50  0000 L CNN
 F 1 "Solar_Cell" H 2900 7050 50  0000 L CNN
-F 2 "" V 3350 7160 50  0001 C CNN
+F 2 "smdpad:smdpad_01x02_1.27_2.54_0.51" V 3350 7160 50  0001 C CNN
 F 3 "~" V 3350 7160 50  0001 C CNN
 	1    3350 7100
 	1    0    0    -1  
@@ -855,7 +855,7 @@ U 1 1 61A06834
 P 4900 6150
 F 0 "BT1" H 5018 6246 50  0000 L CNN
 F 1 "Bat" V 4750 6000 50  0000 L CNN
-F 2 "" V 4900 6210 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 4900 6210 50  0001 C CNN
 F 3 "~" V 4900 6210 50  0001 C CNN
 	1    4900 6150
 	0    1    1    0   
@@ -904,7 +904,7 @@ U 1 1 61A904EC
 P 3450 4100
 F 0 "JP1" H 3450 4305 50  0000 C CNN
 F 1 "USB_5V" H 3450 4214 50  0000 C CNN
-F 2 "" H 3450 4100 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3450 4100 50  0001 C CNN
 F 3 "~" H 3450 4100 50  0001 C CNN
 	1    3450 4100
 	0    1    1    0   
@@ -1023,71 +1023,6 @@ Text Label 4300 1400 2    50   ~ 0
 ULN6
 Text Label 4300 1500 2    50   ~ 0
 ULN7
-$Comp
-L Device:Antenna_Dipole AE1
-U 1 1 61B3DFEE
-P 2550 1800
-F 0 "AE1" V 2554 1780 50  0000 L CNN
-F 1 "NFC" V 2645 1780 50  0000 L CNN
-F 2 "" H 2550 1800 50  0001 C CNN
-F 3 "~" H 2550 1800 50  0001 C CNN
-	1    2550 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 61B451CD
-P 2150 1650
-F 0 "C1" H 2265 1696 50  0000 L CNN
-F 1 "TBD" H 2265 1605 50  0000 L CNN
-F 2 "" H 2188 1500 50  0001 C CNN
-F 3 "~" H 2150 1650 50  0001 C CNN
-	1    2150 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 1800 2150 1800
-Wire Wire Line
-	2350 1900 2150 1900
-$Comp
-L Device:C C2
-U 1 1 61B4873C
-P 2150 2050
-F 0 "C2" H 2265 2096 50  0000 L CNN
-F 1 "TBD" H 2265 2005 50  0000 L CNN
-F 2 "" H 2188 1900 50  0001 C CNN
-F 3 "~" H 2150 2050 50  0001 C CNN
-	1    2150 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 61B48CC0
-P 2150 1500
-F 0 "#PWR01" H 2150 1250 50  0001 C CNN
-F 1 "GND" H 2000 1400 50  0000 C CNN
-F 2 "" H 2150 1500 50  0001 C CNN
-F 3 "" H 2150 1500 50  0001 C CNN
-	1    2150 1500
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 61B49053
-P 2150 2200
-F 0 "#PWR02" H 2150 1950 50  0001 C CNN
-F 1 "GND" H 2155 2027 50  0000 C CNN
-F 2 "" H 2150 2200 50  0001 C CNN
-F 3 "" H 2150 2200 50  0001 C CNN
-	1    2150 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 1800 1350 1800
-Connection ~ 2150 1800
-Wire Wire Line
-	1350 1900 2150 1900
-Connection ~ 2150 1900
 Text Label 1350 3200 0    50   ~ 0
 PRESSURE_CS
 Text Label 1350 3100 0    50   ~ 0
@@ -1132,7 +1067,7 @@ U 1 1 617E79C0
 P 2150 750
 F 0 "R1" H 2220 796 50  0000 L CNN
 F 1 "TBD" H 2220 705 50  0000 L CNN
-F 2 "" V 2080 750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2080 750 50  0001 C CNN
 F 3 "~" H 2150 750 50  0001 C CNN
 	1    2150 750 
 	0    -1   -1   0   
@@ -1143,7 +1078,7 @@ U 1 1 617E7F85
 P 2500 750
 F 0 "R2" H 2570 796 50  0000 L CNN
 F 1 "TBD" H 2570 705 50  0000 L CNN
-F 2 "" V 2430 750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2430 750 50  0001 C CNN
 F 3 "~" H 2500 750 50  0001 C CNN
 	1    2500 750 
 	0    -1   -1   0   
@@ -1173,7 +1108,7 @@ U 1 1 6180507D
 P 2700 1100
 F 0 "R3" H 2770 1146 50  0000 L CNN
 F 1 "TBD" H 2770 1055 50  0000 L CNN
-F 2 "" V 2630 1100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2630 1100 50  0001 C CNN
 F 3 "~" H 2700 1100 50  0001 C CNN
 	1    2700 1100
 	0    -1   -1   0   
@@ -1184,7 +1119,7 @@ U 1 1 6180523F
 P 3050 1100
 F 0 "R4" H 3120 1146 50  0000 L CNN
 F 1 "TBD" H 3120 1055 50  0000 L CNN
-F 2 "" V 2980 1100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2980 1100 50  0001 C CNN
 F 3 "~" H 3050 1100 50  0001 C CNN
 	1    3050 1100
 	0    -1   -1   0   
@@ -1275,8 +1210,6 @@ Wire Wire Line
 	1350 2300 1600 2300
 Text Label 1700 3600 0    50   ~ 0
 ULN5
-Wire Wire Line
-	1650 3000 1350 3000
 Text Label 1700 3700 0    50   ~ 0
 ULN6
 Wire Wire Line
@@ -1289,12 +1222,10 @@ Wire Wire Line
 	1700 3800 1350 3800
 Text Notes 1600 1000 1    50   ~ 0
 Osc
-Text Label 1650 3000 0    50   ~ 0
+Text Label 1350 1800 0    50   ~ 0
 ULN1
-Text Label 1800 3400 0    50   ~ 0
+Text Label 1350 1900 0    50   ~ 0
 ULN2
-Wire Wire Line
-	1800 3400 1350 3400
 $Sheet
 S 10050 1000 700  1750
 U 61967A8F
@@ -1341,10 +1272,10 @@ Connection ~ 10000 1200
 Wire Wire Line
 	10000 1200 10050 1200
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0101
 U 1 1 619B780C
 P 9550 1200
-F 0 "#PWR?" H 9550 1050 50  0001 C CNN
+F 0 "#PWR0101" H 9550 1050 50  0001 C CNN
 F 1 "+5V" H 9565 1373 50  0000 C CNN
 F 2 "" H 9550 1200 50  0001 C CNN
 F 3 "" H 9550 1200 50  0001 C CNN
@@ -1392,5 +1323,52 @@ Text Label 1350 1200 0    50   ~ 0
 P03
 Text Label 1350 1300 0    50   ~ 0
 P04
-NoConn ~ 10050 2100
+Text Label 10750 2250 0    50   ~ 0
+Rx
+Text Label 10750 2150 0    50   ~ 0
+Tx
+Text Label 10750 1150 0    50   ~ 0
+MOSI
+Text Label 10750 1050 0    50   ~ 0
+MISO
+Text Label 10750 2350 0    50   ~ 0
+CLK
+Text Label 10750 2450 0    50   ~ 0
+Vmcu
+Text Label 10750 2550 0    50   ~ 0
+SDA
+Text Label 10750 2650 0    50   ~ 0
+SCL
+Text Label 10750 2050 0    50   ~ 0
+ULN1
+Text Label 10750 1950 0    50   ~ 0
+ULN2
+Text Label 10750 1850 0    50   ~ 0
+ULN3
+Text Label 10750 1750 0    50   ~ 0
+ULN4
+Text Label 10750 1650 0    50   ~ 0
+ULN5
+Text Label 10750 1550 0    50   ~ 0
+ULN6
+Text Label 10750 1450 0    50   ~ 0
+ULN7
+Wire Wire Line
+	1350 2500 1850 2500
+Wire Wire Line
+	1350 2600 1850 2600
+Text Label 1850 2500 0    50   ~ 0
+P16
+Text Label 1850 2600 0    50   ~ 0
+P17
+Text Label 10750 1350 0    50   ~ 0
+P16
+Text Label 10750 1250 0    50   ~ 0
+P17
+Wire Wire Line
+	1350 2700 1850 2700
+Text Label 1850 2700 0    50   ~ 0
+P18
+Text Label 10050 2100 2    50   ~ 0
+P18
 $EndSCHEMATC

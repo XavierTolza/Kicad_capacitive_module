@@ -14,45 +14,45 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x08 J?
+L Connector_Generic:Conn_01x08 J8
 U 1 1 6196934A
 P 2450 1550
-F 0 "J?" H 2530 1542 50  0000 L CNN
+F 0 "J8" H 2530 1542 50  0000 L CNN
 F 1 "Conn_01x08" H 2530 1451 50  0000 L CNN
-F 2 "" H 2450 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2450 1550 50  0001 C CNN
 F 3 "~" H 2450 1550 50  0001 C CNN
 	1    2450 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J?
+L Connector_Generic:Conn_01x06 J9
 U 1 1 6196A0FC
 P 2450 2550
-F 0 "J?" H 2530 2542 50  0000 L CNN
+F 0 "J9" H 2530 2542 50  0000 L CNN
 F 1 "Conn_01x06" H 2530 2451 50  0000 L CNN
-F 2 "" H 2450 2550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2450 2550 50  0001 C CNN
 F 3 "~" H 2450 2550 50  0001 C CNN
 	1    2450 2550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x10 J?
+L Connector_Generic:Conn_01x10 J10
 U 1 1 6196A915
 P 3450 1600
-F 0 "J?" H 3368 2217 50  0000 C CNN
+F 0 "J10" H 3368 2217 50  0000 C CNN
 F 1 "Conn_01x10" H 3368 2126 50  0000 C CNN
-F 2 "" H 3450 1600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 3450 1600 50  0001 C CNN
 F 3 "~" H 3450 1600 50  0001 C CNN
 	1    3450 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J?
+L Connector_Generic:Conn_01x08 J11
 U 1 1 6196B50C
 P 3450 2750
-F 0 "J?" H 3368 3267 50  0000 C CNN
+F 0 "J11" H 3368 3267 50  0000 C CNN
 F 1 "Conn_01x08" H 3368 3176 50  0000 C CNN
-F 2 "" H 3450 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3450 2750 50  0001 C CNN
 F 3 "~" H 3450 2750 50  0001 C CNN
 	1    3450 2750
 	-1   0    0    -1  
@@ -65,10 +65,10 @@ Text HLabel 2250 1550 0    50   Input ~ 0
 Text HLabel 2250 1650 0    50   Input ~ 0
 5V
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 6196D502
 P 1800 1850
-F 0 "#PWR?" H 1800 1600 50  0001 C CNN
+F 0 "#PWR0106" H 1800 1600 50  0001 C CNN
 F 1 "GND" H 1805 1677 50  0000 C CNN
 F 2 "" H 1800 1850 50  0001 C CNN
 F 3 "" H 1800 1850 50  0001 C CNN
@@ -127,10 +127,10 @@ MISO
 Text HLabel 3650 1600 2    50   Input ~ 0
 CLK
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0107
 U 1 1 619750AF
 P 4500 1600
-F 0 "#PWR?" H 4500 1350 50  0001 C CNN
+F 0 "#PWR0107" H 4500 1350 50  0001 C CNN
 F 1 "GND" H 4505 1427 50  0000 C CNN
 F 2 "" H 4500 1600 50  0001 C CNN
 F 3 "" H 4500 1600 50  0001 C CNN

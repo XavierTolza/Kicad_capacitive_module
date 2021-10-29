@@ -21,7 +21,7 @@ AR Path="/619A6960" Ref="U?"  Part="1"
 AR Path="/619A5659/619A6960" Ref="U4"  Part="1" 
 F 0 "U4" H 1450 2017 50  0000 C CNN
 F 1 "ULN2003" H 1450 1926 50  0000 C CNN
-F 2 "" H 1500 800 50  0001 L CNN
+F 2 "Package_SO:STC_SOP-16_3.9x9.9mm_P1.27mm" H 1500 800 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 1550 1150 50  0001 C CNN
 	1    1450 1350
 	1    0    0    -1  
@@ -61,7 +61,7 @@ U 1 1 619A716D
 P 2550 1350
 F 0 "J6" H 2630 1342 50  0000 L CNN
 F 1 "Conn_01x08" H 2630 1251 50  0000 L CNN
-F 2 "" H 2550 1350 50  0001 C CNN
+F 2 "smdpad:smdpad_01x08_1.27_2.54_0.51" H 2550 1350 50  0001 C CNN
 F 3 "~" H 2550 1350 50  0001 C CNN
 	1    2550 1350
 	1    0    0    -1  
