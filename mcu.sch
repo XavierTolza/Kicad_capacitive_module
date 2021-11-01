@@ -700,7 +700,7 @@ AR Path="/6190CDDA" Ref="Y?"  Part="1"
 AR Path="/617EBEE1/6190CDDA" Ref="Y1"  Part="1" 
 F 0 "Y1" V 1154 1931 50  0000 L CNN
 F 1 "32.768k" V 1000 1650 50  0000 L CNN
-F 2 "Crystal:Crystal_HC18-U_Vertical" H 1200 1800 50  0001 C CNN
+F 2 "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Vertical" H 1200 1800 50  0001 C CNN
 F 3 "~" H 1200 1800 50  0001 C CNN
 	1    1200 1800
 	0    -1   1    0   
