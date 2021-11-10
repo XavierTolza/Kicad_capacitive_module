@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 8)
-    (tracks 91)
+    (tracks 94)
     (zones 0)
     (modules 196)
     (nets 170)
@@ -34,8 +34,11 @@
   )
 
   (setup
-    (last_trace_width 0.13)
+    (last_trace_width 0.6)
     (user_trace_width 0.2)
+    (user_trace_width 0.6)
+    (user_trace_width 0.8)
+    (user_trace_width 1)
     (trace_clearance 0.127)
     (zone_clearance 0.508)
     (zone_45_only no)
@@ -7930,6 +7933,7 @@
   (gr_line (start 22.606 24.384) (end 88.646 24.384) (layer Edge.Cuts) (width 0.05) (tstamp 6181BF4B))
   (gr_line (start 22.558 77.738) (end 22.606 24.384) (layer Edge.Cuts) (width 0.05) (tstamp 6181C0CE))
 
+  (segment (start 90.2462 50.3936) (end 90.2462 51.6636) (width 0.6) (layer F.Cu) (net 1))
   (segment (start 76.527 52.378) (end 76.327 52.578) (width 0.2) (layer F.Cu) (net 1) (tstamp 61818598))
   (segment (start 79.277 52.378) (end 76.527 52.378) (width 0.2) (layer F.Cu) (net 1) (tstamp 6181896D))
   (segment (start 75.327 51.578) (end 76.327 52.578) (width 0.2) (layer F.Cu) (net 1) (tstamp 6181881A))
@@ -7941,6 +7945,8 @@
   (segment (start 75.4888 48.6664) (end 75.4888 47.7756) (width 0.2) (layer F.Cu) (net 1) (tstamp 618184C9))
   (segment (start 74.6048 47.0916) (end 74.9808 47.4676) (width 0.2) (layer F.Cu) (net 1) (tstamp 618187FC))
   (segment (start 73.7108 47.0916) (end 74.6048 47.0916) (width 0.2) (layer F.Cu) (net 1) (tstamp 6181876C))
+  (segment (start 89.557 60.462) (end 89.557 62.4552) (width 1) (layer F.Cu) (net 1))
+  (segment (start 87.457 58.112) (end 86.1854 58.112) (width 0.6) (layer F.Cu) (net 1))
   (segment (start 82.41001 52.77119) (end 82.41001 52.7812) (width 0.8) (layer F.Cu) (net 11) (tstamp 618184C6))
   (segment (start 82.4254 52.7558) (end 82.41001 52.77119) (width 0.8) (layer F.Cu) (net 11) (tstamp 618187A2))
   (segment (start 88.6968 52.7558) (end 82.4254 52.7558) (width 0.8) (layer F.Cu) (net 11) (tstamp 618184CF))
@@ -8025,7 +8031,7 @@
   (zone (net 0) (net_name "") (layers F&B.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
-    (keepout (tracks not_allowed) (vias not_allowed) (copperpour not_allowed))
+    (keepout (tracks allowed) (vias not_allowed) (copperpour not_allowed))
     (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
