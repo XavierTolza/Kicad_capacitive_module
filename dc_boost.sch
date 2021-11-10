@@ -44,7 +44,7 @@ F 3 "~" H 3350 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3200 1800 2550 1800
+	3200 1800 2800 1800
 Wire Wire Line
 	2550 1800 2550 2300
 Wire Wire Line
@@ -82,7 +82,7 @@ AR Path="/618DF6F8/618E1B6B" Ref="R27"  Part="1"
 AR Path="/618BF4B7/618CA8DF/618E1B6B" Ref="R27"  Part="1" 
 F 0 "R27" H 4470 2246 50  0000 L CNN
 F 1 "37k" H 4470 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 2200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 4330 2200 50  0001 C CNN
 F 3 "~" H 4400 2200 50  0001 C CNN
 	1    4400 2200
 	1    0    0    -1  
@@ -97,7 +97,7 @@ AR Path="/618DF6F8/618E1B71" Ref="R28"  Part="1"
 AR Path="/618BF4B7/618CA8DF/618E1B71" Ref="R28"  Part="1" 
 F 0 "R28" H 4470 2796 50  0000 L CNN
 F 1 "5k" H 4470 2705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 2750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 4330 2750 50  0001 C CNN
 F 3 "~" H 4400 2750 50  0001 C CNN
 	1    4400 2750
 	1    0    0    -1  
@@ -136,7 +136,7 @@ Wire Wire Line
 	3800 2050 3800 1800
 Connection ~ 3800 1800
 Wire Wire Line
-	3800 1800 3500 1800
+	3800 1800 3550 1800
 $Comp
 L Device:D_Schottky D?
 U 1 1 618E1B88
@@ -176,8 +176,6 @@ Wire Wire Line
 Wire Wire Line
 	5150 1800 5000 1800
 Connection ~ 5000 1800
-Wire Wire Line
-	5000 1800 4700 1800
 $Comp
 L power:GND #PWR?
 U 1 1 618E1BA0
@@ -226,46 +224,7 @@ F 3 "" H 2350 2100 50  0001 C CNN
 	1    2350 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT RV?
-U 1 1 618E1BB4
-P 4700 2400
-AR Path="/618E1BB4" Ref="RV?"  Part="1" 
-AR Path="/617E68F8/618E1BB4" Ref="RV?"  Part="1" 
-AR Path="/618DF6F8/618E1BB4" Ref="RV1"  Part="1" 
-AR Path="/618BF4B7/618CA8DF/618E1BB4" Ref="RV1"  Part="1" 
-F 0 "RV1" H 4630 2354 50  0000 R CNN
-F 1 "R_POT" H 4630 2445 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical" H 4700 2400 50  0001 C CNN
-F 3 "~" H 4700 2400 50  0001 C CNN
-	1    4700 2400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4700 2250 4700 1800
-Wire Wire Line
-	4700 1800 4400 1800
 Connection ~ 4400 1800
-$Comp
-L power:GND #PWR?
-U 1 1 618E1BBD
-P 4700 2600
-AR Path="/618E1BBD" Ref="#PWR?"  Part="1" 
-AR Path="/617E68F8/618E1BBD" Ref="#PWR?"  Part="1" 
-AR Path="/618DF6F8/618E1BBD" Ref="#PWR059"  Part="1" 
-AR Path="/618BF4B7/618CA8DF/618E1BBD" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 4700 2350 50  0001 C CNN
-F 1 "GND" H 4705 2427 50  0000 C CNN
-F 2 "" H 4700 2600 50  0001 C CNN
-F 3 "" H 4700 2600 50  0001 C CNN
-	1    4700 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 2600 4700 2550
-Wire Wire Line
-	4550 2400 4400 2400
-Connection ~ 4700 1800
 Text Label 3600 1800 0    50   ~ 0
 Boost_SW
 Text Label 4100 2400 0    50   ~ 0
@@ -276,4 +235,66 @@ Text HLabel 5150 1750 1    50   Input ~ 0
 Vout
 Text HLabel 2200 2400 0    50   Input ~ 0
 EN
+Wire Wire Line
+	4400 1800 5000 1800
+$Comp
+L Connector:TestPoint TP33
+U 1 1 61D1F9B4
+P 4900 2500
+F 0 "TP33" H 4842 2526 50  0000 R CNN
+F 1 "BoostFB" H 4842 2617 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5100 2500 50  0001 C CNN
+F 3 "~" H 5100 2500 50  0001 C CNN
+	1    4900 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 2500 4900 2400
+Wire Wire Line
+	4900 2400 4400 2400
+$Comp
+L Connector:TestPoint TP31
+U 1 1 61D20549
+P 3550 1350
+F 0 "TP31" H 3608 1468 50  0000 L CNN
+F 1 "SW" H 3608 1377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3750 1350 50  0001 C CNN
+F 3 "~" H 3750 1350 50  0001 C CNN
+	1    3550 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1350 3550 1800
+Connection ~ 3550 1800
+Wire Wire Line
+	3550 1800 3500 1800
+$Comp
+L Connector:TestPoint TP30
+U 1 1 61D20ED7
+P 2800 1700
+F 0 "TP30" H 2858 1818 50  0000 L CNN
+F 1 "BoostVin" H 2858 1727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3000 1700 50  0001 C CNN
+F 3 "~" H 3000 1700 50  0001 C CNN
+	1    2800 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1700 2800 1800
+Connection ~ 2800 1800
+Wire Wire Line
+	2800 1800 2550 1800
+$Comp
+L Connector:TestPoint TP32
+U 1 1 61D2225C
+P 4400 1600
+F 0 "TP32" H 4458 1718 50  0000 L CNN
+F 1 "Vout" H 4458 1627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4600 1600 50  0001 C CNN
+F 3 "~" H 4600 1600 50  0001 C CNN
+	1    4400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1600 4400 1800
 $EndSCHEMATC

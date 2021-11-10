@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 8268 5846
 encoding utf-8
-Sheet 11 13
+Sheet 8 13
 Title ""
 Date ""
 Rev ""
@@ -109,7 +109,7 @@ U 1 1 618AB65C
 P 2000 1250
 F 0 "R38" H 2070 1296 50  0000 L CNN
 F 1 "R" H 2070 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1930 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 1930 1250 50  0001 C CNN
 F 3 "~" H 2000 1250 50  0001 C CNN
 	1    2000 1250
 	1    0    0    -1  

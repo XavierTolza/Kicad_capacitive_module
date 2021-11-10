@@ -42,66 +42,6 @@ F5 "Vldo" I R 2900 3450 50
 F6 "Vbat" I R 2900 3550 50 
 $EndSheet
 $Comp
-L aliexpress:WX-DC12003 U?
-U 1 1 618CA8F0
-P 1600 1500
-AR Path="/618CA8F0" Ref="U?"  Part="1" 
-AR Path="/617E68F8/618CA8F0" Ref="U?"  Part="1" 
-AR Path="/618BF4B7/618CA8F0" Ref="U1"  Part="1" 
-F 0 "U1" H 1600 1965 50  0000 C CNN
-F 1 "WX-DC12003" H 1600 1874 50  0000 C CNN
-F 2 "aliexpress:WX-DC12003" H 1600 1500 50  0001 C CNN
-F 3 "" H 1600 1500 50  0001 C CNN
-	1    1600 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 618CA8F6
-P 850 1450
-AR Path="/618CA8F6" Ref="J?"  Part="1" 
-AR Path="/617E68F8/618CA8F6" Ref="J?"  Part="1" 
-AR Path="/618BF4B7/618CA8F6" Ref="J2"  Part="1" 
-F 0 "J2" H 768 1125 50  0000 C CNN
-F 1 "Conn_01x02" H 768 1216 50  0000 C CNN
-F 2 "smdpad:smdpad_01x02_2.54_3.81_2.54" H 850 1450 50  0001 C CNN
-F 3 "~" H 850 1450 50  0001 C CNN
-	1    850  1450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1050 1350 1150 1350
-Wire Wire Line
-	1150 1350 1150 1300
-Wire Wire Line
-	1150 1300 1200 1300
-Wire Wire Line
-	1200 1500 1150 1500
-Wire Wire Line
-	1150 1500 1150 1450
-Wire Wire Line
-	1150 1450 1050 1450
-$Comp
-L power:GND #PWR?
-U 1 1 618CA902
-P 2150 1600
-AR Path="/618CA902" Ref="#PWR?"  Part="1" 
-AR Path="/617E68F8/618CA902" Ref="#PWR?"  Part="1" 
-AR Path="/618BF4B7/618CA902" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 2150 1350 50  0001 C CNN
-F 1 "GND" H 2155 1427 50  0000 C CNN
-F 2 "" H 2150 1600 50  0001 C CNN
-F 3 "" H 2150 1600 50  0001 C CNN
-	1    2150 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 1600 2150 1500
-Wire Wire Line
-	2150 1500 2000 1500
-Text Label 1750 2550 0    50   ~ 0
-VAC
-$Comp
 L Device:Solar_Cell SC1
 U 1 1 618CA90B
 P 1750 3550
@@ -157,7 +97,7 @@ U 1 1 618CA93D
 P 3300 2600
 F 0 "BT1" H 3418 2696 50  0000 L CNN
 F 1 "Bat" V 3150 2450 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 3300 2660 50  0001 C CNN
+F 2 "smdpad:smdpad_01x02_2.54_2.54_0.51" V 3300 2660 50  0001 C CNN
 F 3 "~" V 3300 2660 50  0001 C CNN
 	1    3300 2600
 	0    1    1    0   
@@ -198,27 +138,6 @@ Text Label 2900 3550 0    50   ~ 0
 Vbat
 Wire Wire Line
 	5400 1200 5050 1200
-Wire Wire Line
-	1750 2550 2100 2550
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP6
-U 1 1 618D1C8C
-P 2200 900
-F 0 "JP6" H 2200 1105 50  0000 C CNN
-F 1 "AC_Power" H 2200 1014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 2200 900 50  0001 C CNN
-F 3 "~" H 2200 900 50  0001 C CNN
-	1    2200 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1050 2200 1300
-Wire Wire Line
-	2200 1300 2000 1300
-Wire Wire Line
-	1900 900  2000 900 
-Wire Wire Line
-	2500 900  2400 900 
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP7
 U 1 1 618DC21B
@@ -243,10 +162,6 @@ F 3 "~" H 5050 1050 50  0001 C CNN
 $EndComp
 Text Label 5150 1650 0    50   ~ 0
 5V
-Text Label 2500 900  0    50   ~ 0
-5V
-Text Label 1900 900  2    50   ~ 0
-12V
 Text Label 4850 1050 2    50   ~ 0
 12V
 Text Label 5250 1050 0    50   ~ 0
@@ -265,8 +180,55 @@ Text HLabel 3200 3450 1    50   Input ~ 0
 3.3V
 Text HLabel 2850 2550 1    50   Input ~ 0
 5V
-Text HLabel 1900 750  1    50   Input ~ 0
-12V
 Wire Wire Line
-	1900 750  1900 900 
+	1750 2550 1950 2550
+Text Label 1750 2550 1    50   ~ 0
+VinDC
+Text HLabel 1750 2550 3    50   Input ~ 0
+VinDC
+Text Label 2050 2550 3    50   ~ 0
+12V
+$Comp
+L Connector:TestPoint TP27
+U 1 1 61D1AB40
+P 1750 3350
+F 0 "TP27" H 1808 3468 50  0000 L CNN
+F 1 "Vsolar" H 1808 3377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1950 3350 50  0001 C CNN
+F 3 "~" H 1950 3350 50  0001 C CNN
+	1    1750 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1750 3350
+$Comp
+L Connector:TestPoint TP28
+U 1 1 61D1CCAA
+P 1950 2250
+F 0 "TP28" H 2008 2368 50  0000 L CNN
+F 1 "VinDC" H 2008 2277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2150 2250 50  0001 C CNN
+F 3 "~" H 2150 2250 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2250 1950 2550
+Connection ~ 1950 2550
+Wire Wire Line
+	1950 2550 2100 2550
+$Comp
+L Connector:TestPoint TP29
+U 1 1 61D2468F
+P 5300 1850
+F 0 "TP29" H 5242 1876 50  0000 R CNN
+F 1 "BoostEN" H 5242 1967 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5500 1850 50  0001 C CNN
+F 3 "~" H 5500 1850 50  0001 C CNN
+	1    5300 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 1850 5300 1400
+Wire Wire Line
+	5300 1400 5400 1400
 $EndSCHEMATC

@@ -118,32 +118,39 @@ F10 "USB_DM" I R 3250 4450 50
 F11 "USB_ID" I R 3250 4550 50 
 $EndSheet
 $Sheet
-S 4900 650  550  800 
+S 9500 4400 750  800 
 U 619A5659
 F0 "low_end_driver" 50
 F1 "low_end_driver.sch" 50
-F2 "ULN1" I L 4900 750 50 
-F3 "ULN2" I L 4900 850 50 
-F4 "ULN3" I L 4900 950 50 
-F5 "ULN4" I L 4900 1050 50 
-F6 "ULN5" I L 4900 1150 50 
-F7 "ULN6" I L 4900 1250 50 
-F8 "ULN7" I L 4900 1350 50 
+F2 "ULN1" I L 9500 4500 50 
+F3 "ULN2" I L 9500 4600 50 
+F4 "ULN3" I L 9500 4700 50 
+F5 "ULN4" I L 9500 4800 50 
+F6 "ULN5" I L 9500 4900 50 
+F7 "ULN6" I L 9500 5000 50 
+F8 "ULN7" I L 9500 5100 50 
+F9 "ULN8" I R 10250 4500 50 
+F10 "ULN9" I R 10250 4600 50 
+F11 "ULN10" I R 10250 4700 50 
+F12 "ULN11" I R 10250 4800 50 
+F13 "ULN12" I R 10250 4900 50 
+F14 "ULN13" I R 10250 5000 50 
+F15 "ULN14" I R 10250 5100 50 
 $EndSheet
 $Sheet
-S 6100 1600 900  650 
+S 1800 6650 900  650 
 U 6194B01F
 F0 "capacitive_sensor" 50
 F1 "capacitive_sensor.sch" 50
-F2 "Vaop" I R 7000 1700 50 
-F3 "MPR_SCL" I L 6100 1800 50 
-F4 "MPR_SDA" I L 6100 1900 50 
-F5 "MPR_nIRQ" I L 6100 2000 50 
-F6 "Vmpr" I L 6100 1700 50 
-F7 "AOP1" I R 7000 1800 50 
-F8 "AOP2" I R 7000 1900 50 
-F9 "AOP_EN" I R 7000 2000 50 
-F10 "MPR_EN" I L 6100 2100 50 
+F2 "Vaop" I R 2700 6750 50 
+F3 "MPR_SCL" I L 1800 6850 50 
+F4 "MPR_SDA" I L 1800 6950 50 
+F5 "MPR_nIRQ" I L 1800 7050 50 
+F6 "Vmpr" I L 1800 6750 50 
+F7 "AOP1" I R 2700 6850 50 
+F8 "AOP2" I R 2700 6950 50 
+F9 "AOP_EN" I R 2700 7050 50 
+F10 "MPR_EN" I L 1800 7150 50 
 $EndSheet
 $Sheet
 S 650  700  700  3300
@@ -187,61 +194,51 @@ $EndSheet
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 6194A73D
-P 1050 5950
+P 4750 6900
 AR Path="/6194A73D" Ref="J1"  Part="1" 
 AR Path="/61AE7304/6194A73D" Ref="J?"  Part="1" 
-F 0 "J1" H 968 5525 50  0000 C CNN
-F 1 "Ultrasound" H 968 5616 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1050 5950 50  0001 C CNN
-F 3 "~" H 1050 5950 50  0001 C CNN
-	1    1050 5950
+F 0 "J1" H 4668 6475 50  0000 C CNN
+F 1 "Ultrasound" H 4668 6566 50  0000 C CNN
+F 2 "smdpad:smdpad_01x04_1.27_2.54_0.51" H 4750 6900 50  0001 C CNN
+F 3 "~" H 4750 6900 50  0001 C CNN
+	1    4750 6900
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR02
 U 1 1 6194A743
-P 1500 5750
+P 5200 6700
 AR Path="/6194A743" Ref="#PWR02"  Part="1" 
 AR Path="/61AE7304/6194A743" Ref="#PWR?"  Part="1" 
-F 0 "#PWR02" H 1500 5600 50  0001 C CNN
-F 1 "+5V" H 1515 5923 50  0000 C CNN
-F 2 "" H 1500 5750 50  0001 C CNN
-F 3 "" H 1500 5750 50  0001 C CNN
-	1    1500 5750
+F 0 "#PWR02" H 5200 6550 50  0001 C CNN
+F 1 "+5V" H 5215 6873 50  0000 C CNN
+F 2 "" H 5200 6700 50  0001 C CNN
+F 3 "" H 5200 6700 50  0001 C CNN
+	1    5200 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 5750 1250 5750
-Text Label 1250 5950 0    50   ~ 0
+	5200 6700 4950 6700
+Text Label 4950 6900 0    50   ~ 0
 US_ECHO
 $Comp
 L power:GND #PWR01
 U 1 1 6194A74B
-P 1400 6100
+P 5100 7050
 AR Path="/6194A74B" Ref="#PWR01"  Part="1" 
 AR Path="/61AE7304/6194A74B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR01" H 1400 5850 50  0001 C CNN
-F 1 "GND" H 1405 5927 50  0000 C CNN
-F 2 "" H 1400 6100 50  0001 C CNN
-F 3 "" H 1400 6100 50  0001 C CNN
-	1    1400 6100
+F 0 "#PWR01" H 5100 6800 50  0001 C CNN
+F 1 "GND" H 5105 6877 50  0000 C CNN
+F 2 "" H 5100 7050 50  0001 C CNN
+F 3 "" H 5100 7050 50  0001 C CNN
+	1    5100 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 6100 1400 6050
+	5100 7050 5100 7000
 Wire Wire Line
-	1400 6050 1250 6050
-Wire Notes Line
-	800  5250 1700 5250
-Wire Notes Line
-	1700 5250 1700 6600
-Wire Notes Line
-	1700 6600 800  6600
-Wire Notes Line
-	800  6600 800  5250
-Text Notes 850  5400 0    59   ~ 0
-Ultrasound
-Text Label 1250 5850 0    50   ~ 0
+	5100 7000 4950 7000
+Text Label 4950 6800 0    50   ~ 0
 US_TRIG
 $Comp
 L Device:LED_BARG D1
@@ -276,7 +273,7 @@ AR Path="/619549E5" Ref="R6"  Part="1"
 AR Path="/61AE7304/619549E5" Ref="R?"  Part="1" 
 F 0 "R6" V 8343 3450 50  0000 C CNN
 F 1 "R" V 8434 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8480 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 8480 3450 50  0001 C CNN
 F 3 "~" H 8550 3450 50  0001 C CNN
 	1    8550 3450
 	0    1    1    0   
@@ -289,7 +286,7 @@ AR Path="/619549EB" Ref="R7"  Part="1"
 AR Path="/61AE7304/619549EB" Ref="R?"  Part="1" 
 F 0 "R7" V 8343 3650 50  0000 C CNN
 F 1 "R" V 8434 3650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8480 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 8480 3650 50  0001 C CNN
 F 3 "~" H 8550 3650 50  0001 C CNN
 	1    8550 3650
 	0    1    1    0   
@@ -302,7 +299,7 @@ AR Path="/619549F1" Ref="R8"  Part="1"
 AR Path="/61AE7304/619549F1" Ref="R?"  Part="1" 
 F 0 "R8" V 8343 3850 50  0000 C CNN
 F 1 "R" V 8434 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8480 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 8480 3850 50  0001 C CNN
 F 3 "~" H 8550 3850 50  0001 C CNN
 	1    8550 3850
 	0    1    1    0   
@@ -424,62 +421,62 @@ Text Label 2400 4350 2    50   ~ 0
 SD_CS
 NoConn ~ 3250 4550
 $Sheet
-S 6250 2600 800  400 
+S 5450 5500 800  400 
 U 61973B81
 F0 "accelerometer" 50
 F1 "accelerometer.sch" 50
-F2 "Vin" I L 6250 2650 50 
-F3 "INT1" I L 6250 2750 50 
-F4 "INT2" I L 6250 2850 50 
-F5 "MISO" I R 7050 2650 50 
-F6 "MOSI" I R 7050 2750 50 
-F7 "CLK" I R 7050 2850 50 
-F8 "nCS" I R 7050 2950 50 
-F9 "Vddio" I L 6250 2950 50 
+F2 "Vin" I L 5450 5550 50 
+F3 "INT1" I L 5450 5650 50 
+F4 "INT2" I L 5450 5750 50 
+F5 "MISO" I R 6250 5550 50 
+F6 "MOSI" I R 6250 5650 50 
+F7 "CLK" I R 6250 5750 50 
+F8 "nCS" I R 6250 5850 50 
+F9 "Vddio" I L 5450 5850 50 
 $EndSheet
 $Comp
 L Sensor_Temperature:DS18B20 U3
 U 1 1 6197FD6C
-P 8300 4850
+P 7750 4800
 AR Path="/6197FD6C" Ref="U3"  Part="1" 
 AR Path="/61AE7304/6197FD6C" Ref="U?"  Part="1" 
 AR Path="/61CC6D58/6197FD6C" Ref="U?"  Part="1" 
-F 0 "U3" H 8071 4896 50  0000 R CNN
-F 1 "DS18B20" H 8071 4805 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7300 4600 50  0001 C CNN
-F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 8150 5100 50  0001 C CNN
-	1    8300 4850
+F 0 "U3" H 7521 4846 50  0000 R CNN
+F 1 "DS18B20" H 7521 4755 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6750 4550 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 7600 5050 50  0001 C CNN
+	1    7750 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR028
 U 1 1 6197FD72
-P 8300 4550
+P 7750 4500
 AR Path="/6197FD72" Ref="#PWR028"  Part="1" 
 AR Path="/61AE7304/6197FD72" Ref="#PWR?"  Part="1" 
 AR Path="/61CC6D58/6197FD72" Ref="#PWR?"  Part="1" 
-F 0 "#PWR028" H 8300 4400 50  0001 C CNN
-F 1 "+5V" H 8315 4723 50  0000 C CNN
-F 2 "" H 8300 4550 50  0001 C CNN
-F 3 "" H 8300 4550 50  0001 C CNN
-	1    8300 4550
+F 0 "#PWR028" H 7750 4350 50  0001 C CNN
+F 1 "+5V" H 7765 4673 50  0000 C CNN
+F 2 "" H 7750 4500 50  0001 C CNN
+F 3 "" H 7750 4500 50  0001 C CNN
+	1    7750 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR029
 U 1 1 6197FD78
-P 8300 5150
+P 7750 5100
 AR Path="/6197FD78" Ref="#PWR029"  Part="1" 
 AR Path="/61AE7304/6197FD78" Ref="#PWR?"  Part="1" 
 AR Path="/61CC6D58/6197FD78" Ref="#PWR?"  Part="1" 
-F 0 "#PWR029" H 8300 4900 50  0001 C CNN
-F 1 "GND" H 8305 4977 50  0000 C CNN
-F 2 "" H 8300 5150 50  0001 C CNN
-F 3 "" H 8300 5150 50  0001 C CNN
-	1    8300 5150
+F 0 "#PWR029" H 7750 4850 50  0001 C CNN
+F 1 "GND" H 7755 4927 50  0000 C CNN
+F 2 "" H 7750 5100 50  0001 C CNN
+F 3 "" H 7750 5100 50  0001 C CNN
+	1    7750 5100
 	1    0    0    -1  
 $EndComp
-Text Label 8600 4850 0    50   ~ 0
+Text Label 8050 4800 0    50   ~ 0
 TEMP_DQ
 $Sheet
 S 6350 750  550  550 
@@ -516,21 +513,19 @@ F 3 "" H 3450 3950 50  0001 C CNN
 	1    3450 3950
 	1    0    0    -1  
 $EndComp
-Text Label 6250 2650 2    50   ~ 0
-Vmcu
-Text Label 6250 2750 2    50   ~ 0
+Text Label 5450 5650 2    50   ~ 0
 ACC_INT1
-Text Label 6250 2850 2    50   ~ 0
+Text Label 5450 5750 2    50   ~ 0
 ACC_INT2
-Text Label 7050 2650 0    50   ~ 0
+Text Label 6250 5550 0    50   ~ 0
 MISO
-Text Label 7050 2750 0    50   ~ 0
+Text Label 6250 5650 0    50   ~ 0
 MOSI
-Text Label 7050 2850 0    50   ~ 0
+Text Label 6250 5750 0    50   ~ 0
 CLK
-Text Label 7050 2950 0    50   ~ 0
+Text Label 6250 5850 0    50   ~ 0
 ACC_nCS
-Text Label 6350 800  2    50   ~ 0
+Text Label 5750 800  2    50   ~ 0
 Vmcu
 Text Label 6350 900  2    50   ~ 0
 CLK
@@ -540,37 +535,33 @@ Text Label 6350 1100 2    50   ~ 0
 MISO
 Text Label 6350 1200 2    50   ~ 0
 PRESSURE_CS
-Text Label 6100 1700 2    50   ~ 0
-Vmcu
-Text Label 7000 1700 0    50   ~ 0
-Vmcu
-Text Label 7000 1800 0    50   ~ 0
+Text Label 2700 6850 0    50   ~ 0
 AOP1
-Text Label 7000 1900 0    50   ~ 0
+Text Label 2700 6950 0    50   ~ 0
 AOP2
-Text Label 7000 2000 0    50   ~ 0
+Text Label 2700 7050 0    50   ~ 0
 AOP_EN
-Text Label 6100 1800 2    50   ~ 0
+Text Label 1800 6850 2    50   ~ 0
 SCL
-Text Label 6100 1900 2    50   ~ 0
+Text Label 1800 6950 2    50   ~ 0
 SDA
-Text Label 6100 2000 2    50   ~ 0
+Text Label 1800 7050 2    50   ~ 0
 MPR_nIRQ
-Text Label 6100 2100 2    50   ~ 0
+Text Label 1800 7150 2    50   ~ 0
 MPR_EN
-Text Label 4900 750  2    50   ~ 0
+Text Label 9500 4500 2    50   ~ 0
 ULN1
-Text Label 4900 850  2    50   ~ 0
+Text Label 9500 4600 2    50   ~ 0
 ULN2
-Text Label 4900 950  2    50   ~ 0
+Text Label 9500 4700 2    50   ~ 0
 ULN3
-Text Label 4900 1050 2    50   ~ 0
+Text Label 9500 4800 2    50   ~ 0
 ULN4
-Text Label 4900 1150 2    50   ~ 0
+Text Label 9500 4900 2    50   ~ 0
 ULN5
-Text Label 4900 1250 2    50   ~ 0
+Text Label 9500 5000 2    50   ~ 0
 ULN6
-Text Label 4900 1350 2    50   ~ 0
+Text Label 9500 5100 2    50   ~ 0
 ULN7
 Text Label 1350 3200 0    50   ~ 0
 PRESSURE_CS
@@ -614,7 +605,7 @@ Text Label 2950 2300 0    50   ~ 0
 Vbat
 Text Label 1350 2800 0    50   ~ 0
 US_ECHO
-Text Label 2400 4250 2    50   ~ 0
+Text Label 1900 4250 2    50   ~ 0
 Vmcu
 Text Label 1350 2900 0    50   ~ 0
 US_TRIG
@@ -827,7 +818,7 @@ U 1 1 61828280
 P 2650 1250
 F 0 "R1" H 2720 1296 50  0000 L CNN
 F 1 "R" H 2720 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2580 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 2580 1250 50  0001 C CNN
 F 3 "~" H 2650 1250 50  0001 C CNN
 	1    2650 1250
 	1    0    0    -1  
@@ -838,7 +829,7 @@ U 1 1 618284A1
 P 2650 1550
 F 0 "R2" H 2720 1596 50  0000 L CNN
 F 1 "R" H 2720 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2580 1550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 2580 1550 50  0001 C CNN
 F 3 "~" H 2650 1550 50  0001 C CNN
 	1    2650 1550
 	1    0    0    -1  
@@ -923,7 +914,7 @@ U 1 1 61852D16
 P 2750 2600
 F 0 "R3" H 2820 2646 50  0000 L CNN
 F 1 "R" H 2820 2555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2680 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 2680 2600 50  0001 C CNN
 F 3 "~" H 2750 2600 50  0001 C CNN
 	1    2750 2600
 	1    0    0    -1  
@@ -934,7 +925,7 @@ U 1 1 61852D1C
 P 2750 2900
 F 0 "R4" H 2820 2946 50  0000 L CNN
 F 1 "R" H 2820 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2680 2900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 2680 2900 50  0001 C CNN
 F 3 "~" H 2750 2900 50  0001 C CNN
 	1    2750 2900
 	1    0    0    -1  
@@ -1019,7 +1010,7 @@ U 1 1 6185D242
 P 4450 2500
 F 0 "R5" H 4520 2546 50  0000 L CNN
 F 1 "R" H 4520 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 4380 2500 50  0001 C CNN
 F 3 "~" H 4450 2500 50  0001 C CNN
 	1    4450 2500
 	1    0    0    -1  
@@ -1030,7 +1021,7 @@ U 1 1 6185D248
 P 4450 2800
 F 0 "R39" H 4520 2846 50  0000 L CNN
 F 1 "R" H 4520 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 4380 2800 50  0001 C CNN
 F 3 "~" H 4450 2800 50  0001 C CNN
 	1    4450 2800
 	1    0    0    -1  
@@ -1109,50 +1100,50 @@ Wire Wire Line
 	4250 2650 4450 2650
 Text Label 4250 2650 2    50   ~ 0
 P04
-Text Label 3800 1050 2    50   ~ 0
+Text Label 4200 950  2    50   ~ 0
 Vmcu
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP10
 U 1 1 618B8905
-P 4000 1050
+P 4400 950
 AR Path="/618B8905" Ref="JP10"  Part="1" 
 AR Path="/61AE7304/618B8905" Ref="JP?"  Part="1" 
 AR Path="/61CC6D58/618B8905" Ref="JP?"  Part="1" 
-F 0 "JP10" H 4000 1255 50  0000 C CNN
-F 1 "Temp_NTC" H 4000 1164 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 4000 1050 50  0001 C CNN
-F 3 "~" H 4000 1050 50  0001 C CNN
-	1    4000 1050
+F 0 "JP10" H 4400 1155 50  0000 C CNN
+F 1 "Temp_NTC" H 4400 1064 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 4400 950 50  0001 C CNN
+F 3 "~" H 4400 950 50  0001 C CNN
+	1    4400 950 
 	1    0    0    -1  
 $EndComp
-Text Label 4000 1200 3    50   ~ 0
+Text Label 4400 1100 3    50   ~ 0
 Vbridge
 Text Label 2850 950  0    50   ~ 0
 Vbridge
 Text Label 4650 2200 0    50   ~ 0
 Vbridge
-Text Label 4200 1050 0    50   ~ 0
+Text Label 4600 950  0    50   ~ 0
 Vbat
 $Comp
 L Device:LED D6
 U 1 1 618F3AC1
-P 5350 3800
-F 0 "D6" V 5389 3682 50  0000 R CNN
-F 1 "LED" V 5298 3682 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 5350 3800 50  0001 C CNN
-F 3 "~" H 5350 3800 50  0001 C CNN
-	1    5350 3800
+P 6400 2400
+F 0 "D6" V 6439 2282 50  0000 R CNN
+F 1 "LED" V 6348 2282 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6400 2400 50  0001 C CNN
+F 3 "~" H 6400 2400 50  0001 C CNN
+	1    6400 2400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R41
 U 1 1 618F5098
-P 5350 3500
-F 0 "R41" H 5420 3546 50  0000 L CNN
-F 1 "R" H 5420 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5280 3500 50  0001 C CNN
-F 3 "~" H 5350 3500 50  0001 C CNN
-	1    5350 3500
+P 6400 2100
+F 0 "R41" H 6470 2146 50  0000 L CNN
+F 1 "R" H 6470 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6330 2100 50  0001 C CNN
+F 3 "~" H 6400 2100 50  0001 C CNN
+	1    6400 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1163,63 +1154,63 @@ Text Label 1950 3700 0    50   ~ 0
 P29
 Text Label 1950 3800 0    50   ~ 0
 P30
-Text Label 5350 3950 3    50   ~ 0
+Text Label 6400 2550 3    50   ~ 0
 Tx
 $Comp
 L Device:LED D7
 U 1 1 61908A78
-P 5750 3800
-F 0 "D7" V 5789 3682 50  0000 R CNN
-F 1 "LED" V 5698 3682 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 5750 3800 50  0001 C CNN
-F 3 "~" H 5750 3800 50  0001 C CNN
-	1    5750 3800
+P 6800 2400
+F 0 "D7" V 6839 2282 50  0000 R CNN
+F 1 "LED" V 6748 2282 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6800 2400 50  0001 C CNN
+F 3 "~" H 6800 2400 50  0001 C CNN
+	1    6800 2400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R42
 U 1 1 61908A7E
-P 5750 3500
-F 0 "R42" H 5820 3546 50  0000 L CNN
-F 1 "R" H 5820 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5680 3500 50  0001 C CNN
-F 3 "~" H 5750 3500 50  0001 C CNN
-	1    5750 3500
+P 6800 2100
+F 0 "R42" H 6870 2146 50  0000 L CNN
+F 1 "R" H 6870 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6730 2100 50  0001 C CNN
+F 3 "~" H 6800 2100 50  0001 C CNN
+	1    6800 2100
 	1    0    0    -1  
 $EndComp
-Text Label 5750 3350 0    50   ~ 0
+Text Label 6800 1950 0    50   ~ 0
 Vmcu
-Text Label 5750 3950 3    50   ~ 0
+Text Label 6800 2550 3    50   ~ 0
 Rx
 Wire Wire Line
-	5350 3350 5750 3350
+	6400 1950 6800 1950
 $Comp
 L Device:LED D5
 U 1 1 6191164C
-P 5050 3800
-F 0 "D5" V 5089 3682 50  0000 R CNN
-F 1 "LED" V 4998 3682 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 5050 3800 50  0001 C CNN
-F 3 "~" H 5050 3800 50  0001 C CNN
-	1    5050 3800
+P 6100 2400
+F 0 "D5" V 6139 2282 50  0000 R CNN
+F 1 "LED" V 6048 2282 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6100 2400 50  0001 C CNN
+F 3 "~" H 6100 2400 50  0001 C CNN
+	1    6100 2400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R40
 U 1 1 61911652
-P 5050 3500
-F 0 "R40" H 5120 3546 50  0000 L CNN
-F 1 "R" H 5120 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4980 3500 50  0001 C CNN
-F 3 "~" H 5050 3500 50  0001 C CNN
-	1    5050 3500
+P 6100 2100
+F 0 "R40" H 6170 2146 50  0000 L CNN
+F 1 "R" H 6170 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6030 2100 50  0001 C CNN
+F 3 "~" H 6100 2100 50  0001 C CNN
+	1    6100 2100
 	1    0    0    -1  
 $EndComp
-Text Label 5050 3950 3    50   ~ 0
+Text Label 6100 2550 3    50   ~ 0
 P16
 Wire Wire Line
-	5350 3350 5050 3350
-Connection ~ 5350 3350
+	6400 1950 6100 1950
+Connection ~ 6400 1950
 $Sheet
 S 2400 5500 550  500 
 U 618BF4B7
@@ -1228,6 +1219,7 @@ F1 "power_management.sch" 50
 F2 "3.3V" I R 2950 5600 50 
 F3 "5V" I R 2950 5700 50 
 F4 "12V" I R 2950 5800 50 
+F5 "VinDC" I L 2400 5600 50 
 $EndSheet
 $Comp
 L power:+12V #PWR0130
@@ -1287,6 +1279,403 @@ F 3 "" H 8050 1850 50  0001 C CNN
 	1    8050 1850
 	1    0    0    -1  
 $EndComp
-Text Label 6250 2950 2    50   ~ 0
+Text Label 4600 5600 2    50   ~ 0
 Vmcu
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 61A19B88
+P 2000 5600
+F 0 "J2" H 1918 5817 50  0000 C CNN
+F 1 "Conn_01x02" H 1918 5726 50  0000 C CNN
+F 2 "smdpad:smdpad_01x02_1.27_2.54_0.51" H 2000 5600 50  0001 C CNN
+F 3 "~" H 2000 5600 50  0001 C CNN
+	1    2000 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5600 2400 5600
+$Comp
+L power:GND #PWR0107
+U 1 1 61A2275B
+P 2250 5850
+AR Path="/61A2275B" Ref="#PWR0107"  Part="1" 
+AR Path="/61AE7304/61A2275B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0107" H 2250 5600 50  0001 C CNN
+F 1 "GND" H 2255 5677 50  0000 C CNN
+F 2 "" H 2250 5850 50  0001 C CNN
+F 3 "" H 2250 5850 50  0001 C CNN
+	1    2250 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5850 2250 5700
+Wire Wire Line
+	2250 5700 2200 5700
+$Comp
+L Jumper:SolderJumper_2_Bridged JP4
+U 1 1 61A73C40
+P 4750 5600
+F 0 "JP4" H 4750 5805 50  0000 C CNN
+F 1 "Vacc" H 4750 5714 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4750 5600 50  0001 C CNN
+F 3 "~" H 4750 5600 50  0001 C CNN
+	1    4750 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5550 4900 5550
+Wire Wire Line
+	4900 5550 4900 5600
+Wire Wire Line
+	4900 5600 4900 5850
+Wire Wire Line
+	4900 5850 5450 5850
+Connection ~ 4900 5600
+Text Label 5350 5550 2    50   ~ 0
+Vacc
+Text Label 10250 4500 0    50   ~ 0
+ULN8
+Text Label 10250 4600 0    50   ~ 0
+ULN9
+Text Label 10250 4700 0    50   ~ 0
+ULN10
+Text Label 10250 4800 0    50   ~ 0
+ULN11
+Text Label 10250 4900 0    50   ~ 0
+ULN12
+Text Label 10250 5000 0    50   ~ 0
+ULN13
+Text Label 10250 5100 0    50   ~ 0
+ULN14
+Wire Wire Line
+	1350 2000 1600 2000
+Wire Wire Line
+	1350 2100 1600 2100
+Text Label 1600 2000 0    50   ~ 0
+ULN8
+Text Label 1600 2100 0    50   ~ 0
+ULN9
+Wire Wire Line
+	1350 1400 1600 1400
+Text Label 1600 1400 0    50   ~ 0
+ULN10
+Wire Wire Line
+	1350 1200 1600 1200
+Wire Wire Line
+	1350 1300 1600 1300
+Text Label 1600 1200 0    50   ~ 0
+ULN11
+Text Label 1600 1300 0    50   ~ 0
+ULN12
+Wire Wire Line
+	1350 3200 1950 3200
+Wire Wire Line
+	1350 3400 1950 3400
+Text Label 1950 3200 0    50   ~ 0
+ULN13
+Text Label 1950 3400 0    50   ~ 0
+ULN14
+$Comp
+L Jumper:SolderJumper_2_Bridged JP6
+U 1 1 61BDC38F
+P 2050 4250
+F 0 "JP6" H 2050 4455 50  0000 C CNN
+F 1 "Vsd" H 2050 4364 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2050 4250 50  0001 C CNN
+F 3 "~" H 2050 4250 50  0001 C CNN
+	1    2050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4250 2400 4250
+$Comp
+L Jumper:SolderJumper_2_Bridged JP17
+U 1 1 61BEC90A
+P 5900 800
+F 0 "JP17" H 5900 1005 50  0000 C CNN
+F 1 "Vsd" H 5900 914 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5900 800 50  0001 C CNN
+F 3 "~" H 5900 800 50  0001 C CNN
+	1    5900 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 800  6350 800 
+Text Label 1250 6750 2    50   ~ 0
+Vmcu
+$Comp
+L Jumper:SolderJumper_2_Bridged JP15
+U 1 1 61BF4A73
+P 1400 6750
+F 0 "JP15" H 1400 6955 50  0000 C CNN
+F 1 "Vmpr" H 1400 6864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1400 6750 50  0001 C CNN
+F 3 "~" H 1400 6750 50  0001 C CNN
+	1    1400 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6750 1800 6750
+Text Label 3350 6750 0    50   ~ 0
+Vmcu
+$Comp
+L Jumper:SolderJumper_2_Bridged JP16
+U 1 1 61C07799
+P 3200 6750
+F 0 "JP16" H 3200 6955 50  0000 C CNN
+F 1 "Vaop" H 3200 6864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3200 6750 50  0001 C CNN
+F 3 "~" H 3200 6750 50  0001 C CNN
+	1    3200 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6750 2700 6750
+$Comp
+L Connector:TestPoint TP26
+U 1 1 61C3245E
+P 8450 4800
+F 0 "TP26" H 8508 4918 50  0000 L CNN
+F 1 "TEMP_DQ" H 8508 4827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8650 4800 50  0001 C CNN
+F 3 "~" H 8650 4800 50  0001 C CNN
+	1    8450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 4800 8050 4800
+$Comp
+L Connector:TestPoint TP22
+U 1 1 61C3EE1E
+P 6500 5550
+F 0 "TP22" H 6558 5668 50  0000 L CNN
+F 1 "MISO" H 6558 5577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6700 5550 50  0001 C CNN
+F 3 "~" H 6700 5550 50  0001 C CNN
+	1    6500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP24
+U 1 1 61C3F95F
+P 6850 5600
+F 0 "TP24" H 6908 5718 50  0000 L CNN
+F 1 "MOSI" H 6908 5627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7050 5600 50  0001 C CNN
+F 3 "~" H 7050 5600 50  0001 C CNN
+	1    6850 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5550 6500 5550
+Wire Wire Line
+	6250 5650 6850 5650
+Wire Wire Line
+	6850 5650 6850 5600
+$Comp
+L Connector:TestPoint TP25
+U 1 1 61C5069A
+P 7250 5700
+F 0 "TP25" H 7308 5818 50  0000 L CNN
+F 1 "MOSI" H 7308 5727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7450 5700 50  0001 C CNN
+F 3 "~" H 7450 5700 50  0001 C CNN
+	1    7250 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5750 7250 5750
+Wire Wire Line
+	7250 5750 7250 5700
+$Comp
+L Connector:TestPoint TP23
+U 1 1 61C5896A
+P 6550 5950
+F 0 "TP23" H 6492 5976 50  0000 R CNN
+F 1 "ACC_nCS" H 6492 6067 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6750 5950 50  0001 C CNN
+F 3 "~" H 6750 5950 50  0001 C CNN
+	1    6550 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 5850 6550 5850
+Wire Wire Line
+	6550 5850 6550 5950
+$Comp
+L Connector:TestPoint TP11
+U 1 1 61C63315
+P 1750 4650
+F 0 "TP11" H 1808 4768 50  0000 L CNN
+F 1 "SD_EN" H 1808 4677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1950 4650 50  0001 C CNN
+F 3 "~" H 1950 4650 50  0001 C CNN
+	1    1750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4650 1750 4750
+Wire Wire Line
+	1750 4750 2400 4750
+$Comp
+L Connector:TestPoint TP10
+U 1 1 61C6C9FA
+P 1400 7200
+F 0 "TP10" H 1342 7226 50  0000 R CNN
+F 1 "MPR_EN" H 1342 7317 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1600 7200 50  0001 C CNN
+F 3 "~" H 1600 7200 50  0001 C CNN
+	1    1400 7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 7200 1400 7150
+Wire Wire Line
+	1400 7150 1800 7150
+$Comp
+L Connector:TestPoint TP12
+U 1 1 61C72999
+P 3100 7050
+F 0 "TP12" H 3042 7076 50  0000 R CNN
+F 1 "AOP_EN" H 3042 7167 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3300 7050 50  0001 C CNN
+F 3 "~" H 3300 7050 50  0001 C CNN
+	1    3100 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 7050 3100 7050
+$Comp
+L Connector:TestPoint TP21
+U 1 1 61C7991E
+P 5600 1250
+F 0 "TP21" H 5542 1276 50  0000 R CNN
+F 1 "PRESSURE_CS" H 5542 1367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5800 1250 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5600 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 1250 5600 1200
+Wire Wire Line
+	5600 1200 6350 1200
+$Comp
+L Connector:TestPoint TP17
+U 1 1 61C8EAA4
+P 4550 4200
+F 0 "TP17" H 4608 4318 50  0000 L CNN
+F 1 "Rx" H 4608 4227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4750 4200 50  0001 C CNN
+F 3 "~" H 4750 4200 50  0001 C CNN
+	1    4550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4250 4550 4250
+Wire Wire Line
+	4550 4250 4550 4200
+$Comp
+L Connector:TestPoint TP18
+U 1 1 61C940CD
+P 4550 4400
+F 0 "TP18" H 4492 4426 50  0000 R CNN
+F 1 "Tx" H 4492 4517 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4750 4400 50  0001 C CNN
+F 3 "~" H 4750 4400 50  0001 C CNN
+	1    4550 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 4350 4550 4350
+Wire Wire Line
+	4550 4350 4550 4400
+$Comp
+L Connector:TestPoint TP5
+U 1 1 61CB967E
+P 750 6800
+F 0 "TP5" H 808 6918 50  0000 L CNN
+F 1 "SCL" H 808 6827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 950 6800 50  0001 C CNN
+F 3 "~" H 950 6800 50  0001 C CNN
+	1    750  6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 61CBA029
+P 850 7000
+F 0 "TP9" H 792 7026 50  0000 R CNN
+F 1 "SDA" H 792 7117 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1050 7000 50  0001 C CNN
+F 3 "~" H 1050 7000 50  0001 C CNN
+	1    850  7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	850  7000 850  6950
+Wire Wire Line
+	850  6950 1800 6950
+Wire Wire Line
+	1800 6850 750  6850
+Wire Wire Line
+	750  6850 750  6800
+$Comp
+L Connector:TestPoint TP14
+U 1 1 61CCA36A
+P 3700 6750
+F 0 "TP14" H 3758 6868 50  0000 L CNN
+F 1 "AOP1" H 3758 6777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3900 6750 50  0001 C CNN
+F 3 "~" H 3900 6750 50  0001 C CNN
+	1    3700 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6750 3700 6850
+Wire Wire Line
+	3700 6850 2700 6850
+$Comp
+L Connector:TestPoint TP15
+U 1 1 61CCFB14
+P 3700 7000
+F 0 "TP15" H 3642 7026 50  0000 R CNN
+F 1 "AOP2" H 3642 7117 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3900 7000 50  0001 C CNN
+F 3 "~" H 3900 7000 50  0001 C CNN
+	1    3700 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 6950 3700 6950
+Wire Wire Line
+	3700 6950 3700 7000
+$Comp
+L Connector:TestPoint TP16
+U 1 1 61CE7D48
+P 4400 1450
+F 0 "TP16" H 4342 1476 50  0000 R CNN
+F 1 "Vbridge" H 4342 1567 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4600 1450 50  0001 C CNN
+F 3 "~" H 4600 1450 50  0001 C CNN
+	1    4400 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 1100 4400 1450
+$Comp
+L Connector:TestPoint TP13
+U 1 1 61D07554
+P 3200 2150
+F 0 "TP13" H 3258 2268 50  0000 L CNN
+F 1 "Vbat" H 3258 2177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3400 2150 50  0001 C CNN
+F 3 "~" H 3400 2150 50  0001 C CNN
+	1    3200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2150 3200 2300
+Wire Wire Line
+	3200 2300 2950 2300
 $EndSCHEMATC
