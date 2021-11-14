@@ -86,7 +86,7 @@ Text HLabel 2350 1150 2    50   Input ~ 0
 Vin
 Text HLabel 3100 2250 2    50   Input ~ 0
 INT1
-Text HLabel 2850 2350 2    50   Input ~ 0
+Text HLabel 3100 2350 2    50   Input ~ 0
 INT2
 Text HLabel 1400 2150 0    50   Input ~ 0
 MISO
@@ -309,4 +309,6 @@ Wire Wire Line
 	3700 2550 3700 2450
 Wire Wire Line
 	3700 2450 3800 2450
+Wire Wire Line
+	3100 2350 2850 2350
 $EndSCHEMATC

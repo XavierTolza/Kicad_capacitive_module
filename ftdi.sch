@@ -136,4 +136,12 @@ NoConn ~ 3800 2350
 NoConn ~ 3800 2450
 NoConn ~ 3800 2550
 NoConn ~ 3800 2650
+NoConn ~ 2600 1750
+NoConn ~ 2600 1850
+Wire Wire Line
+	3200 1150 3200 1100
+Wire Wire Line
+	3200 1100 3800 1100
+Text HLabel 3800 1100 2    50   Input ~ 0
+VddIO
 $EndSCHEMATC

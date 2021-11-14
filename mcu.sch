@@ -562,8 +562,6 @@ Connection ~ 1300 850
 Wire Wire Line
 	850  1150 1300 1150
 Connection ~ 1300 1150
-Text Label 3700 3800 2    50   ~ 0
-nRESET
 Text Label 4750 2500 2    50   ~ 0
 ANT
 Text Label 3700 1450 2    50   ~ 0
@@ -627,8 +625,8 @@ F 3 "DOCUMENTATION" H 6450 1500 50  0001 C CNN
 $EndComp
 Text Label 5550 1050 2    50   ~ 0
 Vmcu
-Text Label 5550 1150 2    50   ~ 0
-nRESET
+Text Label 3700 3800 2    50   ~ 0
+nReset
 NoConn ~ 7050 1250
 Text HLabel 1400 1650 2    50   Input ~ 0
 P00
@@ -764,5 +762,7 @@ Wire Wire Line
 	650  2150 650  1950
 Connection ~ 650  1950
 Text HLabel 3900 3800 1    50   Input ~ 0
+nReset
+Text Label 5550 1150 2    50   ~ 0
 nReset
 $EndSCHEMATC

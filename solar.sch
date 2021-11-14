@@ -619,9 +619,7 @@ Vbat
 Text Label 4800 4950 1    50   ~ 0
 Vbat
 Text Label 3750 2650 1    50   ~ 0
-Solar+
-Text Label 4000 4850 1    50   ~ 0
-Solar+
+SOLAR+
 $Comp
 L Device:R R?
 U 1 1 61B796AC
@@ -724,8 +722,6 @@ Wire Wire Line
 Connection ~ 2200 5600
 Text Label 2300 5600 0    50   ~ 0
 VOC_SAMP
-Text Label 2200 5300 1    50   ~ 0
-Solar+
 Text Label 3800 5450 2    50   ~ 0
 VOC_SAMP
 $Comp
@@ -938,4 +934,11 @@ F 3 "" H 5800 6150 50  0001 C CNN
 	1    5800 6150
 	1    0    0    -1  
 $EndComp
+Text Label 2200 5300 1    50   ~ 0
+SOLAR+
+Text Label 4000 4400 1    50   ~ 0
+SOLAR+
+Wire Wire Line
+	4000 4400 4000 4850
+Connection ~ 4000 4850
 $EndSCHEMATC
