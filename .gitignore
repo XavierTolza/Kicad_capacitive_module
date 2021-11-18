@@ -2,3 +2,7 @@
 *cache*
 _autosave*
 routing
+output
+*.zip
+*.pdf
+gerber
